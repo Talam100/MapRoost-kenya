@@ -8,6 +8,8 @@ create table if not exists public.listings (
   property_type text not null,
   town text not null,
   area text not null,
+  latitude double precision check (latitude is null or latitude between -90 and 90),
+  longitude double precision check (longitude is null or longitude between -180 and 180),
   rent integer not null check (rent > 0 and rent <= 10000000),
   bedrooms text,
   phone text not null,
