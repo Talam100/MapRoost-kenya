@@ -1,14 +1,16 @@
-# NyumbaLink Kenya
+# MapRoost
 
 A mobile-friendly rental-house search website for Kenya. The public site is hosted by GitHub Pages and uses Supabase for shared listings.
 
 ## Live website
 
+The public-facing brand is **MapRoost**. The GitHub repository and free Pages URL still use the original `nyumbafinder-kenya` path, so the live URL has not changed.
+
 https://talam100.github.io/nyumbafinder-kenya/
 
 ## Shared listing system
 
-- The Supabase project **NyumbaLink Kenya** contains the shared `public.listings` table.
+- The Supabase project **MapRoost** contains the shared `public.listings` table.
 - Visitors can submit listings. Submissions start with status `pending`.
 - Visitors can read only listings whose status is `approved`.
 - Visitors cannot approve, edit, or delete listings through the public website.
@@ -18,7 +20,7 @@ https://talam100.github.io/nyumbafinder-kenya/
 ## Reviewing new listings
 
 1. Sign in at https://supabase.com/dashboard/.
-2. Open the **NyumbaLink Kenya** project.
+2. Open the **MapRoost** project.
 3. Open **Table Editor** and select `public.listings`.
 4. Review each row with status `pending`. Check the details and contact the lister where needed.
 5. Change status to `approved` to make the listing visible publicly. Change it to `rejected` to keep it hidden.
