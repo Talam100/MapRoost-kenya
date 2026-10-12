@@ -6,7 +6,7 @@ A mobile-friendly rental-house search website for Kenya. The public site is host
 
 The public-facing brand is **MapRoost**. The GitHub repository and free Pages URL still use the original `nyumbafinder-kenya` path; rename the repository in GitHub Settings to change that address.
 
-https://talam100.github.io/nyumbafinder-kenya/
+https://talam100.github.io/MapRoost-kenya/
 
 ## Shared listing system
 
@@ -33,10 +33,10 @@ Search-engine title, description, canonical URL, structured Website metadata, `r
 
 To request indexing:
 1. Open https://search.google.com/search-console/ and sign in to Google.
-2. Add the URL-prefix property `https://talam100.github.io/nyumbafinder-kenya/`.
+2. Add the URL-prefix property `https://talam100.github.io/MapRoost-kenya/`.
 3. Complete the ownership verification flow Google offers.
 4. Use **URL Inspection** on the homepage and request indexing.
-5. Submit the sitemap URL `https://talam100.github.io/nyumbafinder-kenya/sitemap.xml` in the Sitemaps section when available.
+5. Submit the sitemap URL `https://talam100.github.io/MapRoost-kenya/sitemap.xml` in the Sitemaps section when available.
 
 Google controls whether and when pages are indexed; a request is not a guarantee and can take days or longer.
 
