@@ -19,16 +19,16 @@ https://talam100.github.io/nyumbafinder-kenya/
 1. Create/sign in to a free account at https://supabase.com.
 2. Create a project named `NyumbaLink Kenya`. Save the database password privately; do not put it in this GitHub repository.
 3. Open **SQL Editor**, create a new query, paste the contents of `supabase-schema.sql`, and run it.
-4. Open **Project Settings → API** (or the project's Connect/API section) and copy the **Project URL** and the **anon/public key**. Never use a `service_role` key in a browser website.
+4. Open **Project Settings → API** (or the project's Connect/API section) and copy the **Project URL** and the **publishable key** (it usually starts with `sb_publishable_`). Never put a secret key or legacy `service_role` key in a browser website.
 
 ## Step 2 — Connect the website
 
 1. Open `supabase-config.js` in this GitHub repository.
-2. Replace the empty URL and anon key values with your project's Project URL and anon/public key.
+2. Replace the empty URL and publishable-key values with your project's Project URL and publishable key.
 3. Commit the change. GitHub Actions will publish the update automatically.
 4. Open the live website and submit a test listing. It should say that the listing is awaiting review.
 
-The URL and anon/public key are intended for browser use. The database Row Level Security rules are essential: public visitors can read only approved listings and can only submit new listings with a pending status.
+The URL and publishable key are intended for browser use. The database Row Level Security rules are essential: public visitors can read only approved listings and can only submit new listings with a pending status.
 
 ## Step 3 — Review listings
 
