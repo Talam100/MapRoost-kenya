@@ -1,4 +1,4 @@
-name: Deploy NyumbaFinder Kenya to GitHub Pages
+name: Deploy NyumbaLink Kenya to GitHub Pages
 
 on:
   push:
@@ -24,6 +24,10 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Check inline JavaScript syntax
+        run: |
+          node -e "const fs=require('fs');const html=fs.readFileSync('index.html','utf8');const scripts=[...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/g)].map(m=>m[1]).filter(s=>s.trim());fs.writeFileSync('/tmp/nyumbalink-inline.js',scripts[scripts.length-1]||'');"
+          node --check /tmp/nyumbalink-inline.js
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload website files
