@@ -1,4 +1,4 @@
--- NyumbaLink Kenya: shared rental listings
+-- MapRoost: shared rental listings
 -- Run this whole file in Supabase Dashboard > SQL Editor.
 -- New listings are private/pending until the site owner approves them.
 
