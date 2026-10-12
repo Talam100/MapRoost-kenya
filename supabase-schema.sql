@@ -20,6 +20,9 @@ create table if not exists public.listings (
 
 alter table public.listings enable row level security;
 
+-- Grant the minimum table actions needed; Row Level Security narrows the rows/actions.
+grant select, insert on public.listings to anon, authenticated;
+
 drop policy if exists "Anyone can read approved listings" on public.listings;
 create policy "Anyone can read approved listings"
   on public.listings for select
