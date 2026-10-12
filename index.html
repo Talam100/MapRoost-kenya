@@ -91,7 +91,7 @@ header{height:76px;background:#ffffffed;border-bottom:1px solid var(--line);disp
 <script src="./supabase-config.js"></script>
 <script>
 const dbUrl=window.NYUMBALINK_SUPABASE_URL||"";
-const dbKey=window.NYUMBALINK_SUPABASE_ANON_KEY||"";
+const dbKey=window.NYUMBALINK_SUPABASE_PUBLISHABLE_KEY||"";
 const dbClient=(dbUrl&&dbKey&&window.supabase)?window.supabase.createClient(dbUrl,dbKey):null;
 let sharedListings=[];
 const sampleListings=[
