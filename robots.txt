@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://talam100.github.io/MapRoost-kenya/sitemap.xml
+Sitemap: https://maproost.com/sitemap.xml
